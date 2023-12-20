@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercícios</title>
+    </head>
+
+    <body>
+        <header>
+
+        </header>
+
+        <nav>
+            <!-- <a href="Exercícios/teste.html">00 - Teste</a>
+            <a href="Exercícios/temp.html">TEMP</a> -->
+        </nav>
+        <section id="conteudo"></section>
+
+        <footer>
+            <br>
+            Curso de Web Moderno
+        </footer>
+        <script>
+            document.querySelectorAll('a').forEach(link => {
+                link.onclick = function(e) {
+                    e.preventDefault()
+                    const conteudo = document.getElementById('conteudo')
+                    fetch(link.href)
+                        .then(resp => resp.text())
+                        .then(html => conteudo.innerHTML = html)
+                }
+            })
+        </script>
+    </body>
+
 </html>
