@@ -1,48 +1,56 @@
-<p>
-    <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
-         alt="Muro da Cidade"
-         width="513" height="342"
-         title="Muro da Cidade por Tarso Bessa">
-</p>
+<div wm-slider>
 
-<p>
-    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
-         alt="intro Cod3r" height="342" width="">
-</p>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+            alt="Muro da Cidade"
+            width="513" height="342"
+            title="Muro da Cidade por Tarso Bessa">
+    </p>
 
-<p class="circular">
-    <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
-         alt="Rio de Janeiro" height="342">
-</p>
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+            alt="intro Cod3r" height="342" width="">
+    </p>
 
-<p class="texto">
-    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
-     alt="avatar" height="50" align="left">
-     Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
-     asdasdad das ads  ads  asfg asdgas g adsg gas g as da
-     Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
-     asdasdad das ads  ads  asfg asdgas g adsg gas g as da
-     Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
-     asdasdad das ads  ads  asfg asdgas g adsg gas g as da
-     Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
-     asdasdad das ads  ads  asfg asdgas g adsg gas g as da
-     Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
-     asdasdad das ads  ads  asfg asdgas g adsg gas g as da
-</p>
+    <p class="circular">
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png"
+            alt="Rio de Janeiro" height="342">
+    </p>
 
-<p class="cidade">
+    <p class="texto">
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+        alt="avatar" height="50">
+        Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
+        asdasdad das ads  ads  asfg asdgas g adsg gas g as da
+        Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
+        asdasdad das ads  ads  asfg asdgas g adsg gas g as da
+        Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
+        asdasdad das ads  ads  asfg asdgas g adsg gas g as da
+        Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
+        asdasdad das ads  ads  asfg asdgas g adsg gas g as da
+        Texto asdasd ads  ads ads ads  ads ads  ads asdasdads 
+        asdasdad das ads  ads  asfg asdgas g adsg gas g as da
+    </p>
 
-</p>
+    <p class="cidade">
 
-<p>
-    <picture>
-        <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
-                media="(min-width: 600px)">
-        <img src="http://files.cod3r.com.br/curso-web/logo-estreita.jpg" alt="logo">
-    </picture>
-</p>
+    </p>
+
+    <p>
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+                    media="(min-width: 600px)">
+            <img src="http://files.cod3r.com.br/curso-web/logo-estreita.jpg" alt="logo">
+        </picture>
+    </p>
+</div>
 
 <style>
+    p {
+        position: absolute;
+        display: none;
+    }
+
     .circular {
         width: 513px;
         background-color: #444;
@@ -52,7 +60,7 @@
         width: 400px;
     }
 
-    .texto_img{
+    .texto img{
         margin-right: 10px;
     }
 
@@ -66,3 +74,47 @@
     }
 
 </style>
+
+<script>
+    function mover(elem, inicio, fim, passo, callback) {
+        const novoInicio = inicio - passo
+        if(novoInicio>= fim){
+            elem.style.left = novoInicio + 'px'
+            setTimeout(() => mover(elem, novoInicio, fim, passo, callback), 7)
+        } else {
+            callback()
+        }
+    }
+
+    /*const p = document.querySelector('[wm-slider] > p')
+    p.style.display = 'block'
+    mover(p, 1500, -520, 5, () => {
+        console.log('Terminou !!!')
+    })*/
+
+    function slider() {
+        const elementos = document.querySelectorAll('[wm-slider] > p')
+        const slider = Array.from(elementos)
+    }
+
+    function exibirSlider(slides, slide){
+        slide.style.display = 'block'
+
+        const inicio = innerWidth
+        const fim = -slide.clientWidth
+
+        slide.style.left = `${inicio}px`
+
+        mover(slide, inicio, fim, 5, () => {
+            slide.style.display = 'none'
+            exibirSlider(slides, getProximo(slides, slide))
+        })
+    }
+
+    function getProximo(lista, atual) {
+        const i = lista.indexOf(atual) + i
+        return i < lista.length ? lista[i] : lista[0]
+    }
+
+    slider()
+</script>
