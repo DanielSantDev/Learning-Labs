@@ -1,0 +1,32 @@
+algoritmo Etapas_Acordar
+var
+    despertador: logico
+    abriu_os_olhos: logico
+    levantou_da_cama: logico
+
+inicio
+    despertador <- verdadeiro
+    
+    se despertador = verdadeiro então
+        escreva("O despertador está tocando.")
+    senao
+        escreva("Não preciso acordar agora.")
+    fimse
+    
+    abriu_os_olhos <- verdadeiro
+    
+    se abriu_os_olhos = verdadeiro então
+        escreva("Abri os olhos.")
+    senao
+        escreva("Continuo com os olhos fechados.")
+    fimse
+    
+    levantou_da_cama <- verdadeiro
+    
+    se levantou_da_cama = verdadeiro então
+        escreva("Levantei da cama.")
+    senao
+        escreva("Ainda estou na cama.")
+    fimse
+    
+fimalgoritmo
