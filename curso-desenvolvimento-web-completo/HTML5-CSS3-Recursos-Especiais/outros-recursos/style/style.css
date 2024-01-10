@@ -1,0 +1,83 @@
+/* Estilizando um elemento h1 */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Adicionando um text-shadow */
+  color: #fff;
+}
+
+/* Estilizando um elemento p */
+p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow:
+    1px 1px 1px #000,
+    2px 2px 1px #888,
+    -1px -1px 1px #444;
+  /* Adicionando múltiplos text-shadow para efeitos de contorno */
+  color: #fff;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  margin: 50px auto;
+  box-shadow: 40px 40px 60px rgba(0, 0, 0, 0);
+  animation: shadowAnimation 3s ease-in-out infinite alternate;
+  /* Adicionando uma animação */
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  border-radius: 10px;
+  animation: colorChange 3s ease-in-out infinite alternate;
+}
+
+.box3 {
+   width: 200px;
+      height: 200px;
+      margin: 50px auto;
+      border-radius: 10px;
+      transition: background-color 0.3s ease-in-out;
+      background-color: #ff6666;
+      cursor: pointer;
+}
+
+.box3:hover {
+  background-color: #66ff66;
+}
+
+@keyframes shadowAnimation {
+  0% {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  100% {
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ffcc00;
+  }
+
+  50% {
+    background-color: #2d70c2;
+  }
+
+  100% {
+    background-color: #ffcc00;
+  }
+}
