@@ -1,0 +1,16 @@
+/* Aplicando o box-sizing: border-box; a todos os elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Estilizando o elemento div */
+  .box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #ccc;
+    background-color: #f5f5f5;
+    margin: 20px auto;
+    border-radius: 50px; /* Adicionando border-radius para arredondar as bordas */
+  }
