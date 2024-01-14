@@ -1,7 +1,11 @@
-#Meus Estudos de Desenvolvimento Web
-##Este repositório é dedicado aos meus estudos mais recentes em Desenvolvimento Web. Aqui você encontrará:
+# My Web Development Studies
 
-#Estrutura do Repositório
-##Projetos: Códigos e mini-projetos utilizando tecnologias como HTML, CSS, JavaScript.
-##Frameworks: Exemplos e aplicações utilizando frameworks populares como React, Vue.js, Angular, etc.
-##Recursos: Links, artigos, e resumos de materiais de estudo relacionados a Desenvolvimento Web.
+## This repository is dedicated to my most recent studies in Web Development. Here you will find:
+
+### Projects
+Code snippets and mini-projects using variety of technologies.
+
+### Resources
+Links, articles, and summaries of study materials related to Web Development.
+
+## Note: This is a repository for testing and learning purposes.
