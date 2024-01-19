@@ -1,0 +1,49 @@
+// Defina variáveis
+$cor-primaria: #3498db;
+$cor-texto: #333;
+
+// Defina um mixin para a borda arredondada
+@mixin borda-arredondada {
+  border-radius: 5px;
+}
+
+// Estilo global
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// Estilo do cabeçalho
+header {
+  background-color: $cor-primaria;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+
+  h1 {
+    @include borda-arredondada;
+  }
+}
+
+// Estilo do conteúdo
+.conteudo {
+  padding: 20px;
+  color: $cor-texto;
+  text-align: center;
+
+  p {
+    line-height: 1.5;
+  }
+}
+
+// Estilo do rodapé
+footer {
+  background-color: $cor-primaria;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
