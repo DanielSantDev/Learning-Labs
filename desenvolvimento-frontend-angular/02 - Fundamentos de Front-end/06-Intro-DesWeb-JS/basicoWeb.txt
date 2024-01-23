@@ -1,0 +1,64 @@
+http-server ./     ----- >   Starta/Sobe um http server
+A instrução http-server ./ é um comando que inicia um servidor web local utilizando o pacote http-server do Node.js. Esse comando é frequentemente usado para servir conteúdo estático localmente durante o desenvolvimento web. Vou explicar o que cada parte do comando faz:
+
+
+
+HTML - Dá Semântica:
+
+HTML (Hypertext Markup Language) é usado para estruturar o conteúdo de uma página web.
+Ele fornece uma estrutura semântica para o conteúdo, indicando o significado dos diferentes elementos na página.
+Exemplos de elementos HTML incluem <h1> para cabeçalhos, <p> para parágrafos, <ul> e <li> para listas, entre outros.
+
+
+CSS - Dá Estilo aos Textos:
+
+CSS (Cascading Style Sheets) é usado para estilizar o conteúdo HTML.
+Ele permite definir a aparência visual da página, como cores, fontes, tamanhos, espaçamentos e layouts.
+Com CSS, você pode criar designs atraentes e responsivos para diferentes dispositivos.
+
+
+JS - Dá Comportamento:
+
+JavaScript é uma linguagem de programação que adiciona comportamento dinâmico às páginas web.
+Ele permite interação do usuário, manipulação de dados, atualizações em tempo real e muitas outras funcionalidades interativas.
+JavaScript é comumente usado para criar funcionalidades como validação de formulários, animações, requisições assíncronas (AJAX), entre outras.
+
+
+API: servidor que está servindo dados
+
+
+### Funcionamento do HTTP:
+
+1. **Cliente e Servidor:** O HTTP segue o modelo cliente-servidor, onde o cliente (geralmente um navegador) envia uma solicitação para um servidor e espera uma resposta.
+2. **Métodos de Solicitação:** Existem diferentes métodos de solicitação no HTTP. Os principais são:
+    - **GET:** Solicita dados de um recurso específico (como uma página da web) do servidor.
+    - **POST:** Envia dados para serem processados por um recurso identificado pelo URL.
+    - **PUT, DELETE, PATCH:** Métodos para modificar ou atualizar recursos no servidor.
+3. **URL (Uniform Resource Locator):** É o endereço do recurso solicitado. Por exemplo: `https://www.exemplo.com/pagina`.
+4. **Cabeçalhos (Headers):** São informações adicionais incluídas na solicitação e na resposta HTTP, como tipo de conteúdo, cookies, autenticação, entre outros.
+5. **Corpo da Mensagem:** Em solicitações POST, PUT e outras, o corpo da mensagem contém dados enviados ao servidor.
+6. **Códigos de Status:** Indicam o resultado da solicitação, como sucesso (código 200), redirecionamento (código 301, 302), erro do cliente (código 400), erro do servidor (código 500), entre outros.
+
+
+
+Requisição HTTP: 
+
+URL:
+
+request method: GET POST PUT DELETE
+
+request Headers
+ Configuração
+
+request body
+{
+    "name": "Teste"
+}
+
+Status Code(o que aconteceu com a requisição)
+
+
+response Headers
+
+response body
+ 
