@@ -1,0 +1,18 @@
+<element> e "Web Components" são conceitos diferentes em relação ao desenvolvimento web.
+
+- <element> (HTML Elements):
+
+Definição: Em HTML, os elementos são as estruturas básicas que compõem uma página web, como <div>, <p>, <img>, etc.
+Propósito: Eles são a base da estrutura HTML e são usados para definir a hierarquia e o conteúdo de uma página web.
+Personalização: Enquanto você pode personalizar a aparência e o comportamento dos elementos HTML usando CSS e JavaScript, não há uma abordagem padronizada para encapsular estilos e lógica específicos do componente.
+
+- Web Components:
+
+Definição: Os Web Components são uma tecnologia da Web que permite a criação de componentes reutilizáveis e personalizáveis, encapsulando estilos, comportamentos e marcação em um único pacote.
+Propósito: O objetivo é facilitar a construção de componentes reutilizáveis e independentes que podem ser usados em diferentes partes de um aplicativo web ou mesmo em vários projetos.
+Principais Recursos:
+Custom Elements: Permite a criação de elementos HTML personalizados.
+Shadow DOM: Fornece encapsulamento de estilos e lógica, impedindo que eles vazem para fora do componente.
+HTML Templates: Permite a definição de marcação reutilizável.
+HTML Imports: Permite importar e reutilizar componentes em outros projetos.
+Resumindo, <element> refere-se aos elementos HTML padrão que compõem uma página, enquanto "Web Components" é uma tecnologia que introduz a capacidade de criar componentes personalizados com encapsulamento e reutilização avançados.
