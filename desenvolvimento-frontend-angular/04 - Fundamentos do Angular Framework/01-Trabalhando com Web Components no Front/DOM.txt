@@ -1,0 +1,41 @@
+- DOM
+
+DOM significa "Document Object Model" (Modelo de Objeto de Documento, em português). É uma representação estruturada e hierárquica de um documento, geralmente usado para documentos HTML e XML. O DOM organiza a estrutura do documento em uma árvore de objetos, onde cada elemento, atributo, e pedaço de texto do documento é representado como um nó na árvore.
+
+Essa representação permite que programas e scripts acessem e manipulem dinamicamente o conteúdo, a estrutura e o estilo de documentos HTML ou XML. Por exemplo, em uma página da web, você pode usar JavaScript para interagir com o DOM, alterando o conteúdo de um elemento, adicionando ou removendo elementos, modificando estilos, etc. O DOM é uma interface de programação de aplicações (API) que fornece uma maneira padrão de representar e interagir com documentos estruturados.
+
+O DOM não é específico para uma linguagem de programação em particular, embora seja frequentemente associado a JavaScript no contexto de páginas da web. Ele é suportado por vários ambientes de execução, como navegadores web, facilitando a interação dinâmica e a manipulação de conteúdo em tempo de execução.
+
+
+
+- Parsed
+
+"Parsed" é um termo que geralmente está relacionado ao processamento de dados ou informações em um formato estruturado. Quando dizemos que algo foi "parsed", significa que os dados foram analisados e organizados de acordo com uma estrutura específica ou um conjunto de regras.
+
+Por exemplo, em programação, quando você lê um arquivo de texto ou uma string que contém dados em um formato específico, como JSON ou XML, você precisa "parsear" esses dados para convertê-los em uma estrutura de dados que o programa possa entender e manipular. O processo de parsing envolve analisar o texto ou a string para identificar e extrair as informações relevantes de acordo com a sintaxe e a estrutura do formato em questão.
+
+Em resumo, "parsed" refere-se ao ato de analisar e interpretar dados em um formato específico para que possam ser utilizados ou manipulados de maneira mais eficaz.
+
+
+
+- Shadow DOM
+
+O Shadow DOM (Document Object Model) é uma tecnologia da web que permite encapsular o estilo e a estrutura do código em um componente web, isolando-os do restante da página. Ele é particularmente útil em ambientes nos quais você deseja criar componentes reutilizáveis que não serão afetados pelos estilos e scripts externos.
+
+A ideia básica por trás do Shadow DOM é criar uma "sombra" separada (um subconjunto do DOM) onde você pode colocar o HTML, CSS e JavaScript do seu componente. Essa sombra não é acessível de fora, e os estilos definidos dentro dela não afetam nem são afetados pelos estilos fora dela.
+
+Alguns dos benefícios do Shadow DOM incluem:
+
+1. **Encapsulação:** Os estilos e scripts do componente são encapsulados dentro do Shadow DOM, evitando interferências indesejadas com outros estilos e scripts na página.
+
+2. **Reusabilidade:** Você pode criar componentes encapsulados que podem ser facilmente reutilizados sem se preocupar com conflitos de estilo ou script.
+
+3. **Manutenção:** O Shadow DOM facilita a manutenção do código, pois os componentes encapsulados são mais independentes do restante da página.
+
+O Shadow DOM é frequentemente usado em conjunto com as Web Components, uma especificação da web que permite a criação de componentes personalizados reutilizáveis. Web Components combinam HTML, CSS e JavaScript encapsulados pelo Shadow DOM para criar componentes que podem ser usados em várias partes de uma aplicação web.
+
+Para usar o Shadow DOM, os desenvolvedores utilizam a API do Shadow DOM, que fornece métodos para criar e manipular esse domínio sombreado.
+
+- Component
+
+Dentro do contexto do Shadow DOM, um "componente" refere-se a um elemento HTML encapsulado que incorpora seu próprio Shadow DOM. Esses componentes encapsulados são frequentemente criados usando a especificação de Web Components, que inclui o uso do Shadow DOM, bem como outros recursos como HTML Templates, Custom Elements e HTML Imports (embora os Imports estejam sendo substituídos por módulos ES6).
