@@ -1,0 +1,9 @@
+TS é um superset para JS
+
+Any: serve para armazenar qualquer coisa, quando o retorno não é um valor previsível
+
+Interface: um contrato que deve ser implementado
+
+Float não existe em TS
+
+A vantagem do typescript é a previsibilidade de código, por apontar erros em tempo de desenvolvimento
