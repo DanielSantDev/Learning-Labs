@@ -1,0 +1,50 @@
+* Angular
+  -Framework baseado em Javascript
+  -Typescript como linguagem principal
+  -SPAs são seu foco
+  -Componentes são a base da arquitetura
+  -Estrutura organizada e bem definida
+  -Sistema de tooling muito rico: CLI, HTTP, Router...
+
+* Pre-requisitos:
+    -HTML e CSS
+    -NODE e NPM
+    -JS e TS
+
+Angular vs AgularJS
+
+Frameworks: angular, react, vue e aurella
+(abordagem diferentes de resolver problemas)
+
+
+Componentes(elemento visual, customizavel e reutilizavel):
+
+    Definição: No Angular, os componentes são os blocos de construção fundamentais de uma aplicação. Eles encapsulam a lógica, a apresentação e o estado de uma parte específica da interface do usuário.
+    Características:
+    Cada componente possui um ciclo de vida que inclui eventos como ngOnInit, ngOnDestroy, etc.
+    Os componentes podem ter propriedades (input) e eventos (output) para comunicação entre componentes.
+    Eles podem incluir templates HTML, estilos CSS e lógica TypeScript.
+
+
+Gerenciamento de Estados(states: atualiza carrinho de compras ao clicar no botao de comprar um produto):
+
+    Estado Local: Cada componente pode ter seu próprio estado local, mantido por propriedades no TypeScript e manipulado pelo componente.
+    Serviços e Injeção de Dependência: O Angular incentiva o uso de serviços para gerenciar estados globais compartilhados entre componentes. A injeção de dependência é usada para fornecer instâncias de serviços aos componentes que precisam deles.
+    Redux/NgRx: Para aplicações maiores, é comum usar padrões como Redux ou NgRx, que oferecem um gerenciamento de estado centralizado, imutabilidade e controle de ações.
+    
+
+Roteamento(responsavel pela froma de navegar, fazendo a troca de URL sem recarregar a página):
+
+    Configuração de Roteamento: O Angular fornece um módulo de roteamento que permite a navegação entre diferentes componentes com base em URLs.
+    Rotas Aninhadas: É possível definir rotas aninhadas para criar hierarquias complexas de navegação.
+    Guardas de Rota: O roteador suporta guardas de rota para controlar o acesso a determinadas rotas com base em condições específicas.
+    Lazy Loading: O Angular suporta carregamento preguiçoso (lazy loading), permitindo carregar módulos de forma assíncrona sob demanda.
+   
+   
+Renderização(decidi a melhor maneira de acessar e entregar o componente pronto para o browser):
+
+    Template Binding: O Angular oferece uma poderosa ligação de modelo (template binding), permitindo a associação bidirecional entre componentes e templates HTML.
+    Diretivas: O Angular inclui diretivas, como ngIf e ngFor, que permitem a manipulação dinâmica do DOM com base no estado do componente.
+    Pipes: Os pipes são usados para transformar dados antes de serem exibidos no template.
+    Zonas: O Angular usa o conceito de "Zonas" para interceptar e reagir a eventos assíncronos, atualizando automaticamente a interface do usuário quando o estado do aplicativo muda.
+    A combinação desses conceitos permite criar aplicações web robustas e escaláveis com o Angular. Ao entender como os componentes se comunicam, como o estado é gerenciado, como o roteamento é configurado e como a renderização é controlada, os desenvolvedores podem criar interfaces de usuário dinâmicas e eficientes.
