@@ -1,0 +1,9 @@
+Components: um elemento que seja visual, customizável e replicável.
+Geralmente é uma função JS/TS que retorna HTML, CSS e carrega eventos JS junto
+
+Banner, Card, Video  =>   APP-ROOT   => index.HTML
+
+Event binding:
+(evento)="metodo()"
+
+Uma data binding serve para associar um elemento visual a uma propriedade ou método da classe TS
