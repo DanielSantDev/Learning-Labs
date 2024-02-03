@@ -24,10 +24,20 @@ public class Cliente {
         return endereco;
     }
 
+    /**
+     * Method to set an address
+     * @param endereco
+     * @return
+     */
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
 
+    /**
+     * Método para cadastrar endereco
+     * @param endereco
+     * @return endereco
+     */
     public void cadastrarEndereco(String endereco) {
         setEndereco(endereco);
     }
