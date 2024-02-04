@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="exemplosMod7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/módulos-do-curso/modulo-07/exemplosMod7/src/exemplosMod7/type-search-index.zip!/" />
+      <root url="jar://$PROJECT_DIR$/módulos-do-curso/modulo-07/exemplosMod7/src/exemplosMod7/member-search-index.zip!/" />
+      <root url="jar://$PROJECT_DIR$/módulos-do-curso/modulo-07/exemplosMod7/src/exemplosMod7/package-search-index.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/módulos-do-curso/modulo-07/EcercicioModulo07/EcercicioModulo07.iml" filepath="$PROJECT_DIR$/módulos-do-curso/modulo-07/EcercicioModulo07/EcercicioModulo07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/curso-especializacao-backend-java-EBAC.iml" filepath="$PROJECT_DIR$/.idea/curso-especializacao-backend-java-EBAC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/módulos-do-curso/modulo-07/exemplosMod7/exemplosMod7.iml" filepath="$PROJECT_DIR$/módulos-do-curso/modulo-07/exemplosMod7/exemplosMod7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/módulos-do-curso/modulo-07/modificadoresDeAcesso/modificadoresDeAcesso.iml" filepath="$PROJECT_DIR$/módulos-do-curso/modulo-07/modificadoresDeAcesso/modificadoresDeAcesso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/módulos-do-curso/modulo-07/nomemclaturaProjetosJava/nomemclaturaProjetosJava.iml" filepath="$PROJECT_DIR$/módulos-do-curso/modulo-07/nomemclaturaProjetosJava/nomemclaturaProjetosJava.iml" />
+    </modules>
+  </component>
+</project>

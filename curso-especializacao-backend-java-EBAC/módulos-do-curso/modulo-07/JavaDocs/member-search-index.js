@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"MinhaClasse","l":"meuMetodo(int)"},{"p":"<Unnamed>","c":"MinhaClasse","l":"MinhaClasse()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"MinhaClasse","l":"somar(int, int)","url":"somar(int,int)"}]
