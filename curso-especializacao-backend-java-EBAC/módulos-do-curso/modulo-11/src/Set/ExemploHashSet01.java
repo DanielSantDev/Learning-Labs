@@ -9,11 +9,12 @@ import java.util.HashSet;
  * Isso significa que não garante uma ordem específica dos elementos.
  * O acesso aos dados é mais rápido que em um TreeSet, mas nada garante que os dados estaram ordenados.
  * Sem duplicatas. Não repete valores na lista
+ *
  * Recomendado quando a ordem dos elementos não é importante e o objetivo é otimizar operações de busca.
  *
  */
 
-public class ExemploHashSet {
+public class ExemploHashSet01 {
     public static void main(String args[]) {
         exemploNovo();
         exemploListaSimples();

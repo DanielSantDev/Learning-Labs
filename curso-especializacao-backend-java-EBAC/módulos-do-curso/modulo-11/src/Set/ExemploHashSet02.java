@@ -2,7 +2,7 @@ package Set;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ExemploSet {
+public class ExemploHashSet02 {
     public static void main(String[] args) {
         // Criando uma instância de HashSet para representar um conjunto de números inteiros
         Set<Integer> conjuntoDeNumeros = new HashSet<>();
