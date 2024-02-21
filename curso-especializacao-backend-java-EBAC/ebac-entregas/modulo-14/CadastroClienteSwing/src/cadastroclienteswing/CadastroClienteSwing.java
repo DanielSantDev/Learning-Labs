@@ -8,7 +8,8 @@ package cadastroclienteswing;
 public class CadastroClienteSwing {
 
     public static void main(String[] args) {
-        // TODO code application logic here
+        TelaPrincipal tela = new TelaPrincipal();
+        tela.setVisible(true);
     }
     
 }
