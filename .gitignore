@@ -27,3 +27,4 @@ replay_pid*
 *.iml
 /curso-especializacao-backend-java-EBAC/ebac-entregas/modulo-14/CadastroClienteSwing/nbproject/private/
 /curso-especializacao-backend-java-EBAC/ebac-entregas/modulo-14/CadastroClienteSwing/build/
+*.mf
