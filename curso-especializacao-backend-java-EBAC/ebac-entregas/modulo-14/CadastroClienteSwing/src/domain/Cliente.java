@@ -6,7 +6,7 @@ public class Cliente {
 
     private String nome;
     private Long cpf;
-    private Long tel;
+    private String tel;
     private String end;
     private Integer numero;
     private String cidade;
@@ -15,7 +15,7 @@ public class Cliente {
     public Cliente(String nome, String cpf, String tel, String end, String num, String cidade, String estado) {
         this.nome = nome;
         this.cpf = Long.valueOf(cpf.trim());
-        this.tel = Long.valueOf(tel.trim());
+        this.tel = String.valueOf(tel.trim());
         this.end = end;
         this.numero = Integer.valueOf(num.trim());
         this.cidade = cidade;
@@ -39,11 +39,11 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public Long getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(Long tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
 
