@@ -80,6 +80,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         labelCpf.setText("CPF");
 
+        txtCpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCpfActionPerformed(evt);
+            }
+        });
+
         tabelaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -357,12 +363,64 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNumEnderecoActionPerformed
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
-        // TODO add your handling code here:
+        int linhaSelecionada = tabelaClientes.getSelectedRow();
+        if (linhaSelecionada != -1) {
+        int result = JOptionPane.showConfirmDialog(this, "Deseja realmente excluir este cliente?", "CUIDADO",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+
+        if (result == JOptionPane.YES_OPTION) {
+            Long cpf = Long.parseLong(tabelaClientes.getValueAt(linhaSelecionada, 1).toString());
+            this.clienteDAO.excluir(cpf);
+            modelo.removeRow(linhaSelecionada);
+
+            JOptionPane.showMessageDialog(null, "Cliente excluído com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+            limparCampos();
+        }
+        } else {
+        JOptionPane.showMessageDialog(null, "Nenhum cliente selecionado.", "ERRO", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     private void btnAtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizarActionPerformed
-        // TODO add your handling code here:
+        int linhaSelecionada = tabelaClientes.getSelectedRow();
+        
+        if (linhaSelecionada != -1) {
+        String nome = txtNome.getText();
+        String cpf = txtCpf.getText();
+        String telefone = txtTelefone.getText();
+        String endereco = txtEndereco.getText();
+        String num = txtNumEndereco.getText();
+        String cidade = txtCidade.getText();
+        String estado = txtEstado.getText();
+
+        if (!isCamposValidos(nome, cpf, telefone, endereco, num, cidade, estado)) {
+            JOptionPane.showMessageDialog(null, "Existem campos obrigatórios a serem preenchidos !", "Atencao", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+//        Long cpfAtualizar = Long.parseLong(tabelaClientes.getValueAt(linhaSelecionada, 1).toString());
+        Cliente clienteAtualizado = new Cliente(nome, cpf, telefone, endereco, num, cidade, estado);
+        clienteDAO.atualizar(clienteAtualizado);
+
+        modelo.setValueAt(clienteAtualizado.getNome(), linhaSelecionada, 0);
+        modelo.setValueAt(clienteAtualizado.getCpf(), linhaSelecionada, 1);
+        modelo.setValueAt(clienteAtualizado.getTel(), linhaSelecionada, 2);
+        modelo.setValueAt(clienteAtualizado.getEnd(), linhaSelecionada, 3);
+        modelo.setValueAt(clienteAtualizado.getNumero(), linhaSelecionada, 4);
+        modelo.setValueAt(clienteAtualizado.getCidade(), linhaSelecionada, 5);
+        modelo.setValueAt(clienteAtualizado.getEstado(), linhaSelecionada, 6);
+
+        JOptionPane.showMessageDialog(null, "Cliente atualizado com sucesso", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
+        limparCampos();
+        } else {
+        JOptionPane.showMessageDialog(null, "Nenhum cliente selecionado.", "ERRO", JOptionPane.INFORMATION_MESSAGE);
+        }
     }//GEN-LAST:event_btnAtualizarActionPerformed
+
+    private void txtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCpfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCpfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -439,6 +497,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void initCustomComponents() {
     modelo.addColumn("Nome");
     modelo.addColumn("CPF");
+    modelo.addColumn("Telefone");
+    modelo.addColumn("Endereco");
     
     tabelaClientes.setModel(modelo);
     }
@@ -446,5 +506,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void limparCampos() {
         txtNome.setText("");
         txtCpf.setText("");
+        txtTelefone.setText("");
+        txtEndereco.setText("");
     }
 }
