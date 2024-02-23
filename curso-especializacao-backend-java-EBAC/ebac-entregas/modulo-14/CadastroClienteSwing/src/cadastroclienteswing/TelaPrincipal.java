@@ -87,7 +87,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
             new String [] {
                 "Nome", "CPF", "Telefone", "Endereco"
             }
-        ));
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
         tabelaClientes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tabelaClientesMouseClicked(evt);
@@ -182,9 +190,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtNome))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(labelCpf)
-                        .addGap(18, 18, 18)
+                        .addComponent(labelCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(20, 20, 20)
                         .addComponent(jLabel2)
@@ -279,17 +286,24 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
         String nome = txtNome.getText();
         String cpf = txtCpf.getText();
+        String telefone = txtTelefone.getText();
+        String endereco = txtEndereco.getText();
+        String num = txtNumEndereco.getText();
+        String cidade = txtCidade.getText();
+        String estado = txtEstado.getText();
+
                 
-        if (!isCamposValidos(nome, cpf)) {
-            JOptionPane.showMessageDialog(null, "Existem campos a serem preenchidos !", "Atencao",JOptionPane.INFORMATION_MESSAGE);
+        if (!isCamposValidos(nome, cpf, telefone, endereco, num, cidade, estado)) {
+            JOptionPane.showMessageDialog(null, "Existem campos obrigatórios a serem preenchidos !", "Atencao",JOptionPane.INFORMATION_MESSAGE);
             return;
         }
         
-        Cliente cliente = new Cliente(nome, cpf, cpf, null, cpf, null, null);
+        Cliente cliente = new Cliente(nome, cpf, telefone, endereco, num, cidade, estado);
         Boolean isCadastrado = this.clienteDAO.cadastrar(cliente);
         
         if (isCadastrado) {
-            modelo.addRow(new Object[]{cliente.getNome(), cliente.getCpf()});
+            modelo.addRow(new Object[]{cliente.getNome(), cliente.getCpf(), cliente.getTel(), cliente.getEnd(),
+            cliente.getNumero(), cliente.getCidade(), cliente.getEstado()});
             limparCampos();
         } else {
             JOptionPane.showMessageDialog(null, "Cliente jah se encontra cadastrado", "ATENCAO", JOptionPane.INFORMATION_MESSAGE);
@@ -303,6 +317,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
         if (linhaSelecionada != -1){
           txtNome.setText(cliente.getNome());
           txtCpf.setText(cliente.getCpf().toString());
+          txtEndereco.setText(cliente.getEnd());
+          txtTelefone.setText(cliente.getTel().toString());
         }
     }//GEN-LAST:event_tabelaClientesMouseClicked
 
