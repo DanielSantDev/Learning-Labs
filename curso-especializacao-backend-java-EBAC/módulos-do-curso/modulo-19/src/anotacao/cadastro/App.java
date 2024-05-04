@@ -1,7 +1,3 @@
-package br.com.rpires.reflections.anotacao.cadastro;
-
-
-
 import br.com.rpires.reflections.anotacao.cadastro.dao.ClienteMapDAO;
 import br.com.rpires.reflections.anotacao.cadastro.dao.IClienteDAO;
 import br.com.rpires.reflections.anotacao.cadastro.domain.Cliente;
