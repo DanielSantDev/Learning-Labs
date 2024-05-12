@@ -16,8 +16,10 @@
       <module fileurl="file://$PROJECT_DIR$/modulo-19/modulo-19.iml" filepath="$PROJECT_DIR$/modulo-19/modulo-19.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulo-20/modulo-20.iml" filepath="$PROJECT_DIR$/modulo-20/modulo-20.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulo-22/modulo-22.iml" filepath="$PROJECT_DIR$/modulo-22/modulo-22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo-23/modulo-23.iml" filepath="$PROJECT_DIR$/modulo-23/modulo-23.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/módulos-do-curso.iml" filepath="$PROJECT_DIR$/.idea/módulos-do-curso.iml" />
       <module fileurl="file://$PROJECT_DIR$/modulo-07/nomemclaturaProjetosJava/nomemclaturaProjetosJava.iml" filepath="$PROJECT_DIR$/modulo-07/nomemclaturaProjetosJava/nomemclaturaProjetosJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modulo-23/test/test.iml" filepath="$PROJECT_DIR$/modulo-23/test/test.iml" />
     </modules>
   </component>
 </project>
