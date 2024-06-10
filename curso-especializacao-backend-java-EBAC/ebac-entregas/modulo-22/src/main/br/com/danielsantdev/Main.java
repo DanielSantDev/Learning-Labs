@@ -11,26 +11,29 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         List<Pessoa> pessoas = new ArrayList<>();
 
-        System.out.println("Digite um Nome e logo apos o Sexo. Digite 'sair' para terminar o programa :p.");
+        System.out.println("\nDigite um Nome e Sexo sequencialmente no formato Nome-Sexo, com traco e separados " +
+                "por virgula. Digite 'sair' para terminar o programa :p.");
+        String entrada = scanner.nextLine();
 
-        while (true) {
-            System.out.print("Nome: ");
-            String nome = scanner.nextLine();
-            if (nome.equalsIgnoreCase("sair")) {
-                break;
+        String[] entradas = entrada.split(",");
+
+        for (String e : entradas) {
+            String[] dados = e.split("-");
+            if (dados.length != 2) {
+                System.out.println("Formato invalido para: " + e);
+                continue;
             }
+            String nome = dados[0].trim();
+            String sexo = dados[1].trim();
 
-            System.out.print("Sexo (M/F): ");
-            String sexo = scanner.nextLine();
             if (!sexo.equalsIgnoreCase("M") && !sexo.equalsIgnoreCase("F")) {
-                System.out.println("Sexo inválido. Por favor, digite 'M' para masculino ou 'F' para feminino.");
+                System.out.println("Sexo invalido para: " + e);
                 continue;
             }
 
             pessoas.add(new Pessoa(nome, sexo));
         }
 
-        // filtro das mulheres
         List<Pessoa> mulheres = pessoas.stream()
                 .filter(p -> p.getSexo().equalsIgnoreCase("F"))
                 .collect(Collectors.toList());
