@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="modulo-07/EcercicioModulo07/src"/>
+	<classpathentry kind="src" path="modulo-07/exemplosMod7/src"/>
+	<classpathentry kind="src" path="modulo-07/JavaDocs"/>
+	<classpathentry kind="src" path="modulo-07/modificadoresDeAcesso/src"/>
+	<classpathentry kind="src" path="modulo-07/nomemclaturaProjetosJava/src"/>
+	<classpathentry kind="src" path="modulo-08/operadores"/>
+	<classpathentry kind="src" path="modulo-08/variaveisBasicas"/>
+	<classpathentry kind="src" path="modulo-08/variaveisClasseMetodos"/>
+	<classpathentry kind="src" path="modulo-09"/>
+	<classpathentry kind="src" path="modulo-10/src"/>
+	<classpathentry kind="src" path="modulo-11/src"/>
+	<classpathentry kind="src" path="modulo-12/Arrays/src"/>
+	<classpathentry kind="src" path="modulo-12/Iterator/src"/>
+	<classpathentry kind="src" path="modulo-12/Map/src"/>
+	<classpathentry kind="src" path="modulo-13/src"/>
+	<classpathentry kind="src" path="modulo-14/src"/>
+	<classpathentry kind="src" path="modulo-15/src"/>
+	<classpathentry kind="src" path="modulo-16/src"/>
+	<classpathentry kind="src" path="modulo-17/src"/>
+	<classpathentry kind="src" path="modulo-18/src"/>
+	<classpathentry kind="src" path="modulo-19/src"/>
+	<classpathentry kind="src" path="modulo-20/src"/>
+	<classpathentry kind="src" path="modulo-22/src"/>
+	<classpathentry kind="src" path="modulo-23-24/src"/>
+	<classpathentry kind="src" path="modulo-25/src"/>
+	<classpathentry kind="output" path="modulo-07/EcercicioModulo07/out/production/EcercicioModulo07"/>
+</classpath>
