@@ -1,9 +1,9 @@
-package br.com.danielsantdev.dao;
+package main.java.br.com.danielsantdev.dao;
 
-import br.com.danielsantdev.dao.generic.GenericDAO;
-import br.com.danielsantdev.domain.Venda;
-import br.com.danielsantdev.domain.Venda.Status;
-import br.com.danielsantdev.exceptions.TipoChaveNaoEncontradaException;
+import main.java.br.com.danielsantdev.dao.generic.GenericDAO;
+import main.java.br.com.danielsantdev.domain.Venda;
+import main.java.br.com.danielsantdev.domain.Venda.Status;
+import main.java.br.com.danielsantdev.exceptions.TipoChaveNaoEncontradaException;
 
 public class VendaDAO extends GenericDAO<Venda, String> implements IVendaDAO {
 

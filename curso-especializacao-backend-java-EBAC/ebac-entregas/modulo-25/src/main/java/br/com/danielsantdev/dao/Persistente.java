@@ -1,4 +1,4 @@
-package br.com.danielsantdev.dao;
+package main.java.br.com.danielsantdev.dao;
 
 public interface Persistente {
 

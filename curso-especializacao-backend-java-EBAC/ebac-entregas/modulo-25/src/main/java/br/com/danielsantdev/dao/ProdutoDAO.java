@@ -1,7 +1,7 @@
-package br.com.danielsantdev.dao;
+package main.java.br.com.danielsantdev.dao;
 
-import br.com.danielsantdev.dao.generic.GenericDAO;
-import br.com.danielsantdev.domain.Produto;
+import main.java.br.com.danielsantdev.dao.generic.GenericDAO;
+import main.java.br.com.danielsantdev.domain.Produto;
 
 public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoDAO {
 	

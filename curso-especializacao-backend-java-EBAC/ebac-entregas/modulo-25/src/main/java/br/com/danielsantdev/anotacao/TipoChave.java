@@ -1,4 +1,4 @@
-package main.java.anotacao;
+package main.java.br.com.danielsantdev.anotacao;
 
 import java.lang.annotation.*;
 
