@@ -1,6 +1,5 @@
 package main.java.br.com.danielsantdev.dao;
 
-import main.java.br.com.danielsantdev.dao.IClienteDAO;
 import main.java.br.com.danielsantdev.dao.generic.GenericDAO;
 import main.java.br.com.danielsantdev.domain.Cliente;
 
