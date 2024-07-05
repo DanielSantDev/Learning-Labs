@@ -1,4 +1,4 @@
-package java.main.br.com.danielsantdev.domain;
+package main.br.com.danielsantdev.domain;
 
 public class Cliente {
 

@@ -1,11 +1,11 @@
-package java.main.br.com.danielsantdev.dao;
+package main.br.com.danielsantdev.dao;
+
+import main.br.com.danielsantdev.dao.jdbc.ConnectionFactory;
+import main.br.com.danielsantdev.domain.Cliente;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
-import java.main.br.com.danielsantdev.dao.jdbc.ConnectionFactory;
-import java.main.br.com.danielsantdev.domain.Cliente;
 
 public class ClienteDAO implements IClienteDAO {
 
@@ -15,7 +15,7 @@ public class ClienteDAO implements IClienteDAO {
 		PreparedStatement stm = null;
 		try {
 			connection = ConnectionFactory.getConnection();
-			String sql = "INSERT INTO TB_CLIENTE_2 (ID, CODIGO, NOME) VALUES (nextval('SQ_CLIENTE_2'),?,?)";
+			String sql = "INSERT INTO CLIENTES (ID, CODIGO, NOME) VALUES (nextval('CLIENTES'),?,?)";
 			stm = connection.prepareStatement(sql);
 			stm.setString(1, cliente.getCodigo());
 			stm.setString(2, cliente.getNome());
@@ -40,7 +40,7 @@ public class ClienteDAO implements IClienteDAO {
 		Cliente cliente = null;
 		try {
 			connection = ConnectionFactory.getConnection();
-			String sql = "select * from tb_cliente_2 where codigo = ?";
+			String sql = "select * from tb_cliente where codigo = ?";
 			stm = connection.prepareStatement(sql);
 			stm.setString(1, codigo);
 			rs = stm.executeQuery();
@@ -69,7 +69,7 @@ public class ClienteDAO implements IClienteDAO {
 		PreparedStatement stm = null;
 		try {
 			connection = ConnectionFactory.getConnection();
-			String sql = "DELETE FROM TB_CLIENTE_2 WHERE CODIGO = ?";
+			String sql = "DELETE FROM TB_CLIENTE WHERE CODIGO = ?";
 			stm = connection.prepareStatement(sql);
 			stm.setString(1, cliente.getCodigo());
 			return stm.executeUpdate();

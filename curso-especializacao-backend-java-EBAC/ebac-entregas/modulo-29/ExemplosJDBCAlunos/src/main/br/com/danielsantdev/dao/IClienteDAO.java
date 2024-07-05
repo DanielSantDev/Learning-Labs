@@ -1,6 +1,6 @@
-package java.main.br.com.danielsantdev.dao;
+package main.br.com.danielsantdev.dao;
 
-import java.main.br.com.danielsantdev.domain.Cliente;
+import main.br.com.danielsantdev.domain.Cliente;
 
 public interface IClienteDAO {
 

@@ -1,4 +1,4 @@
-package java.main.br.com.danielsantdev.dao.jdbc;
+package main.br.com.danielsantdev.dao.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -27,7 +27,7 @@ public class ConnectionFactory {
 	private static Connection initConnection() {
 		try {
             return DriverManager.getConnection(
-            		"jdbc:postgresql://localhost:15432/vendas_online_2", "postgres", "admin");
+            		"jdbc:postgresql://localhost:5432/clientes", "postgres", "475962");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
