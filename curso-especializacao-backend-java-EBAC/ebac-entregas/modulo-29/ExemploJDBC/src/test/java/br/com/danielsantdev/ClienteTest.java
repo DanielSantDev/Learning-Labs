@@ -1,4 +1,4 @@
-package main.java.br.com.danielsantdev;
+package test.java.br.com.danielsantdev;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -15,11 +15,9 @@ import main.java.br.com.danielsantdev.dao.generic.jdbc.dao.IClienteDAO;
 import main.java.br.com.danielsantdev.domin.Cliente;
 
 public class ClienteTest {
-
 	
 	private IClienteDAO clienteDAO;
-	
-	
+
 	@Test
 	public void cadastrarTest() throws Exception {
 		clienteDAO = new ClienteDAO();
