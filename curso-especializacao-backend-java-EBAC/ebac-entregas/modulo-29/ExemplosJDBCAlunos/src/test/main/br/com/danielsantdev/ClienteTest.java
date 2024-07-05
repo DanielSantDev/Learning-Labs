@@ -6,9 +6,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import main.java.br.com.danielsantdev.dao.ClienteDAO;
-import main.java.br.com.danielsantdev.dao.IClienteDAO;
-import main.java.br.com.danielsantdev.domain.Cliente;
+import main.br.com.danielsantdev.dao.ClienteDAO;
+import main.br.com.danielsantdev.dao.IClienteDAO;
+import main.br.com.danielsantdev.domain.Cliente;
 
 public class ClienteTest {
 
@@ -18,7 +18,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("01");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel San");
 		
 		Integer qtd = dao.cadastrar(cliente);
 		assertTrue(qtd == 1);
