@@ -12,7 +12,7 @@ public class Main {
         List<Pessoa> pessoas = new ArrayList<>();
 
         System.out.println("\nDigite um Nome e Sexo sequencialmente no formato Nome-Sexo, com traco e separados " +
-                "por virgula. Digite 'sair' para terminar o programa :p.");
+                "por virgula.");
         String entrada = scanner.nextLine();
 
         String[] entradas = entrada.split(",");
@@ -43,4 +43,11 @@ public class Main {
 
         scanner.close();
     }
+
+    public static List<Pessoa> filtrarMulheres(List<Pessoa> pessoas) {
+        return pessoas.stream()
+                .filter(p -> p.getSexo().equalsIgnoreCase("F"))
+                .collect(Collectors.toList());
+    }
+
 }
