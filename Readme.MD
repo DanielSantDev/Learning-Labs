@@ -1,11 +1,11 @@
-# My Web Development Studies
+# Meus estudos de desenvolvimento web
 
-## This repository is dedicated to my most recent studies in Web Development. Here you will find:
+## Este repositório é dedicado aos meus estudos mais recentes em Desenvolvimento de Software. Aqui você encontrará:
 
-### Projects
-Code snippets and mini-projects using variety of technologies.
+### Projetos
+Trechos de código e miniprojetos usando diversas tecnologias.
 
-### Resources
-Links, articles, and summaries of study materials related to Web Development.
+### Recursos
+Links, artigos e resumos de materiais de estudo relacionados ao Desenvolvimento Web.
 
-## Note: This is a repository for testing and learning purposes.
+## Nota: Este é um repositório para fins de teste e aprendizagem.
