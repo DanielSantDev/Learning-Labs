@@ -41,21 +41,24 @@ public class part2 {
 //            System.out.println(int1 + " >= " + int2);
 //        }
 
-        //33
-        int x = entrada.nextInt();
-        String conversao = String.valueOf(x);
+//        //33
+//        int x = entrada.nextInt();
+//        String conversao = String.valueOf(x);
+//
+//        char primeiraPosicao = conversao.charAt(0);
+//        char segundaPosicao = conversao.charAt(1);
+//
+//        int primeiroNumero = Integer.parseInt(String.valueOf(primeiraPosicao));
+//        int segundoNumero = Integer.parseInt(String.valueOf(segundaPosicao));
+//
+//        System.out.println("Primeira posicao do numero digitado: " + primeiraPosicao);
+//        System.out.println("Segunda posicao do numero digitado: " + segundaPosicao);
+//        System.out.println("Soma das duas posicoes: " + (primeiroNumero + segundoNumero));
+//
+//        System.out.println("A soma dos numeros eh: " + sumDigits(x));
 
-        char primeiraPosicao = conversao.charAt(0);
-        char segundaPosicao = conversao.charAt(1);
+        //34
 
-        int primeiroNumero = Integer.parseInt(String.valueOf(primeiraPosicao));
-        int segundoNumero = Integer.parseInt(String.valueOf(segundaPosicao));
-
-        System.out.println("Primeira posicao do numero digitado: " + primeiraPosicao);
-        System.out.println("Segunda posicao do numero digitado: " + segundaPosicao);
-        System.out.println("Soma das duas posicoes: " + (primeiroNumero + segundoNumero));
-
-        System.out.println("A soma dos numeros eh: " + sumDigits(x));
 
     }
 
