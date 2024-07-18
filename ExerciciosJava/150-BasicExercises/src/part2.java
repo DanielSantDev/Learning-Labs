@@ -57,9 +57,20 @@ public class part2 {
 //
 //        System.out.println("A soma dos numeros eh: " + sumDigits(x));
 
-        //34
+//        //34
+//        final double PI = 3.1416d;
+//        double lado = entrada.nextDouble();
+//        double area = (6 * (lado * lado)) / (4 * Math.tan(PI / 6));
+//        System.out.println("Area do Hexagono: " + area);
 
+//        //35
+//        double quantidadeLados = entrada.nextDouble();
+//        double comprimentoLados = entrada.nextDouble();
+//        double area = (quantidadeLados * (comprimentoLados * comprimentoLados)) / (4 * Math.tan(Math.PI / quantidadeLados));
+//        System.out.println("Area do Poligono: " + area);
 
+        //36
+        
     }
 
     public static int sumDigits(long n) {
