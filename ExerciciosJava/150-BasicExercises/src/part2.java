@@ -69,14 +69,22 @@ public class part2 {
 //        double area = (quantidadeLados * (comprimentoLados * comprimentoLados)) / (4 * Math.tan(Math.PI / quantidadeLados));
 //        System.out.println("Area do Poligono: " + area);
 
-        //36
-        double latitude1 = entrada.nextDouble();
-        double longitude1 = entrada.nextDouble();
+//        //36
+//        double latitude1 = entrada.nextDouble();
+//        double longitude1 = entrada.nextDouble();
+//
+//        double latitude2 = entrada.nextDouble();
+//        double longitude2 = entrada.nextDouble();
+//
+//        System.out.println("A distancia entre os pontos é: " + distance_Between_LatLong(latitude1, longitude1, latitude2, longitude2));
 
-        double latitude2 = entrada.nextDouble();
-        double longitude2 = entrada.nextDouble();
+        //37
+        char[] texto = entrada.nextLine().toCharArray();
 
-        System.out.println("A distancia entre os pontos é: " + distance_Between_LatLong(latitude1, longitude1, latitude2, longitude2));
+        for (int i = texto.length - 1; i >= 0; i--) {
+            System.out.println(texto[i]);
+        }
+
     }
 
     public static int sumDigits(long n) {
