@@ -128,7 +128,7 @@ public class ClienteDAO implements IClienteDAO {
 	
 	private String getSqlInsert() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("INSERT INTO TB_CLIENTE_2 (ID, CODIGO, NOME) ");
+		sb.append("INSERT INTO TB_CLIENTE (ID, CODIGO, NOME) ");
 		sb.append("VALUES (nextval('SQ_CLIENTE_2'),?,?)");
 		return sb.toString();
 	}
@@ -140,7 +140,7 @@ public class ClienteDAO implements IClienteDAO {
 	
 	private String getSqlUpdate() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("UPDATE TB_CLIENTE_2 ");
+		sb.append("UPDATE TB_CLIENTE ");
 		sb.append("SET NOME = ?, CODIGO = ? ");
 		sb.append("WHERE ID = ?");
 		return sb.toString();
@@ -154,7 +154,7 @@ public class ClienteDAO implements IClienteDAO {
 	
 	private String getSqlDelete() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("DELETE FROM TB_CLIENTE_2 ");
+		sb.append("DELETE FROM TB_CLIENTE ");
 		sb.append("WHERE CODIGO = ?");
 		return sb.toString();
 	}
@@ -165,7 +165,7 @@ public class ClienteDAO implements IClienteDAO {
 	
 	private String getSqlSelect() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("SELECT * FROM TB_CLIENTE_2 ");
+		sb.append("SELECT * FROM TB_CLIENTE ");
 		sb.append("WHERE CODIGO = ?");
 		return sb.toString();
 	}
@@ -176,7 +176,7 @@ public class ClienteDAO implements IClienteDAO {
 	
 	private String getSqlSelectAll() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("SELECT * FROM TB_CLIENTE_2");
+		sb.append("SELECT * FROM TB_CLIENTE");
 		return sb.toString();
 	}
 	
