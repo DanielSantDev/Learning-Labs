@@ -78,13 +78,57 @@ public class part2 {
 //
 //        System.out.println("A distancia entre os pontos é: " + distance_Between_LatLong(latitude1, longitude1, latitude2, longitude2));
 
-        //37
-        char[] texto = entrada.nextLine().toCharArray();
+//        //37
+//        char[] texto = entrada.nextLine().toCharArray();
+//
+//        for (int i = texto.length - 1; i >= 0; i--) {
+//            System.out.println(texto[i]);
+//        }
 
-        for (int i = texto.length - 1; i >= 0; i--) {
-            System.out.println(texto[i]);
+        //38
+        String test = "Daniel San 123456 d a ¨7&)(*";
+        count(test);
+
+    }
+
+    public static void count(String x) {
+        // Convert the input string to a character array
+        char[] ch = x.toCharArray();
+
+        // Initialize counters for letters, spaces, numbers, and other characters
+        int letter = 0;
+        int space = 0;
+        int num = 0;
+        int other = 0;
+
+        // Iterate through the character array to categorize characters
+        for (int i = 0; i < x.length(); i++) {
+            // Check if the character is a letter
+            if (Character.isLetter(ch[i])) {
+                letter++;
+            }
+            // Check if the character is a digit (number)
+            else if (Character.isDigit(ch[i])) {
+                num++;
+            }
+            // Check if the character is a space
+            else if (Character.isSpaceChar(ch[i])) {
+                space++;
+            }
+            // Character falls into the "other" category if none of the above conditions are met
+            else {
+                other++;
+            }
         }
 
+        // Display the original string
+        System.out.println("The string is : Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33");
+
+        // Display the counts of letters, spaces, numbers, and other characters
+        System.out.println("letter: " + letter);
+        System.out.println("space: " + space);
+        System.out.println("number: " + num);
+        System.out.println("other: " + other);
     }
 
     public static int sumDigits(long n) {
