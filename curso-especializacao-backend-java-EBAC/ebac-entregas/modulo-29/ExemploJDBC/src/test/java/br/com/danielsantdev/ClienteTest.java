@@ -24,7 +24,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("10");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
 		
@@ -43,7 +43,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("10");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
 		
@@ -62,7 +62,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("10");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
 		
@@ -81,7 +81,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("10");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
 		
@@ -113,7 +113,7 @@ public class ClienteTest {
 		
 		Cliente cliente = new Cliente();
 		cliente.setCodigo("10");
-		cliente.setNome("Rodrigo Pires");
+		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
 		
