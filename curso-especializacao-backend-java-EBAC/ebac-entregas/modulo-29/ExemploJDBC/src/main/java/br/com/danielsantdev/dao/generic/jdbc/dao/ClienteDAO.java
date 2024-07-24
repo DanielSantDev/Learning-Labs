@@ -129,7 +129,7 @@ public class ClienteDAO implements IClienteDAO {
 	private String getSqlInsert() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO TB_CLIENTE (ID, CODIGO, NOME) ");
-		sb.append("VALUES (nextval('SQ_CLIENTE_2'),?,?)");
+		sb.append("VALUES (nextval('SQL_CLIENTE'),?,?)");
 		return sb.toString();
 	}
 	
