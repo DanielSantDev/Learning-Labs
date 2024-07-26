@@ -1,21 +1,23 @@
+CREATE TABLE tb_cliente (
+	id BIGINT,
+	nome VARCHAR(50) NOT NULL,
+    codigo VARCHAR NOT NULL,
+	CONSTRAINT pk_id_cliente primary key(id)
+);
+
 create sequence sq_cliente
 start 1
 increment 1
 owned by tb_cliente.id;
 
-create table tb_cliente (
-	id bigint,
-	nome varchar(50) not null,
-	cpf bigint not null,
-	tel bigint not null,
-	endereco varchar(50) not null,
-	numero bigint not null,
-	cidade varchar(50) not null,
-	estado varchar(50) not null,
-	constraint pk_id_cliente primary key(id)
+CREATE TABLE tb_produto (
+	id BIGINT,
+	nome VARCHAR(50) NOT NULL,
+    codigo VARCHAR NOT NULL,
+	CONSTRAINT pk_id_produto primary key(id)
 );
 
-select * from tb_cliente;
-drop table tb_cliente;
-
-insert into tb_cliente values('Daniel', 102030);
+create sequence sql_produto
+start 1
+increment 1
+owned by tb_produto.id;
