@@ -1,6 +1,6 @@
 package test.java.br.com.danielsantdev.dao;
 
-import test.java.util.Collection;
+import java.util.Collection;
 
 import main.java.br.com.danielsantdev.domain.Cliente;
 import main.java.br.com.danielsantdev.exceptions.TipoChaveNaoEncontradaException;
