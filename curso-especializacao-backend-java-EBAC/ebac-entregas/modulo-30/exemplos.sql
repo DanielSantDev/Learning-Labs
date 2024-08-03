@@ -8,6 +8,7 @@ create table tb_cliente (
 	numero bigint not null,
 	cidade varchar(50) not null,
 	estado varchar(50) not null,
+    email varchar(30),
 	constraint pk_id_cliente primary key(id)
 );
 
@@ -18,6 +19,7 @@ create table tb_produto(
 	nome varchar(50) not null,
 	descricao varchar(100) not null,
 	valor numeric(10,2) not null,
+	marca varchar(30),
 	constraint pk_id_produto primary key(id)
 );
 
@@ -63,6 +65,10 @@ start 1
 increment 1
 owned by tb_produto_quantidade.id;
 
+drop sequence sq_cliente;
+
+drop sequence sq_produto;
+
 ALTER TABLE TB_CLIENTE
 ADD CONSTRAINT UK_CPF_CLIENTE UNIQUE (CPF);
 
@@ -72,6 +78,11 @@ ADD CONSTRAINT UK_CODIGO_PRODUTO UNIQUE (CODIGO);
 ALTER TABLE TB_VENDA
 ADD CONSTRAINT UK_CODIGO_VENDA UNIQUE (CODIGO);
 
+--ALTER TABLE tb_cliente
+--ADD COLUMN EMAIL VARCHAR(25);
+
+--ALTER TABLE tb_produto
+--ADD COLUMN  MARCA VARCHAR(25);
 
 SELECT V.ID AS ID_VENDA, V.CODIGO, V.ID_CLIENTE_FK, V.VALOR_TOTAL, V.DATA_VENDA, V.STATUS_VENDA,
 C.ID AS ID_CLIENTE, C.NOME, C.CPF, C.TEL, C.ENDERECO, C.NUMERO, C.CIDADE, C.ESTADO,
