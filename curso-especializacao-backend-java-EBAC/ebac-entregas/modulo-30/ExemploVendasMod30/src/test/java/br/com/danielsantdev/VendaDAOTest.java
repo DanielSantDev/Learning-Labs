@@ -286,6 +286,7 @@ public class VendaDAOTest {
 		produto.setDescricao("Produto 1");
 		produto.setNome("Produto 1");
 		produto.setValor(valor);
+		produto.setMarca("Marca 1");
 		produtoDao.cadastrar(produto);
 		return produto;
 	}
@@ -293,12 +294,13 @@ public class VendaDAOTest {
 	private Cliente cadastrarCliente() throws TipoChaveNaoEncontradaException, DAOException {
 		Cliente cliente = new Cliente();
 		cliente.setCpf(12312312312L);
-		cliente.setNome("Rodrigo");
+		cliente.setNome("Daniel San");
 		cliente.setCidade("São Paulo");
 		cliente.setEnd("End");
 		cliente.setEstado("SP");
 		cliente.setNumero(10);
 		cliente.setTel(1199999999L);
+		cliente.setEmail("Danielsantdev@gmail.com");
 		clienteDao.cadastrar(cliente);
 		return cliente;
 	}
