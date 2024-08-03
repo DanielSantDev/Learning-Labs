@@ -26,6 +26,7 @@ public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO
 		entityCadastrado.setNome(entity.getNome());
 		entityCadastrado.setNumero(entity.getNumero());
 		entityCadastrado.setTel(entity.getTel());
+		entityCadastrado.setEmail(entity.getEmail());
 		
 	}
 
@@ -33,8 +34,8 @@ public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO
 	protected String getQueryInsercao() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO TB_CLIENTE ");
-		sb.append("(ID, NOME, CPF, TEL, ENDERECO, NUMERO, CIDADE, ESTADO)");
-		sb.append("VALUES (nextval('sq_cliente'),?,?,?,?,?,?,?)");
+		sb.append("(ID, NOME, CPF, TEL, ENDERECO, NUMERO, CIDADE, ESTADO, EMAIL) ");
+		sb.append("VALUES (nextval('sq_cliente'), ?, ?, ?, ?, ?, ?, ?, ?)");
 		return sb.toString();
 	}
 
@@ -47,7 +48,7 @@ public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO
 		stmInsert.setLong(5, entity.getNumero());
 		stmInsert.setString(6, entity.getCidade());
 		stmInsert.setString(7, entity.getEstado());
-		
+		stmInsert.setString(8, entity.getEmail());
 	}
 
 	@Override
@@ -64,13 +65,14 @@ public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO
 	protected String getQueryAtualizacao() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("UPDATE TB_CLIENTE ");
-		sb.append("SET NOME = ?,");
-		sb.append("TEL = ?,");
-		sb.append("ENDERECO = ?,");
-		sb.append("NUMERO = ?,");
-		sb.append("CIDADE = ?,");
-		sb.append("ESTADO = ?");
-		sb.append(" WHERE CPF = ?");
+		sb.append("SET NOME = ?, ");
+		sb.append("TEL = ?, ");
+		sb.append("ENDERECO = ?, ");
+		sb.append("NUMERO = ?, ");
+		sb.append("CIDADE = ?, ");
+		sb.append("ESTADO = ?, ");
+		sb.append("EMAIL = ? ");
+		sb.append("WHERE CPF = ? ");
 		return sb.toString();
 	}
 
@@ -82,8 +84,10 @@ public class ClienteDAO extends GenericDAO<Cliente, Long> implements IClienteDAO
 		stmUpdate.setLong(4, entity.getNumero());
 		stmUpdate.setString(5, entity.getCidade());
 		stmUpdate.setString(6, entity.getEstado());
-		stmUpdate.setLong(7, entity.getCpf());
+		stmUpdate.setString(7, entity.getEmail());
+		stmUpdate.setLong(8, entity.getCpf());
 	}
+
 
 	@Override
 	protected void setParametrosQuerySelect(PreparedStatement stmSelect, Long valor) throws SQLException {
