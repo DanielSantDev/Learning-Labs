@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+
 @Entity
 @Table(name = "TB_CLIENTE")
 public class Cliente {
@@ -86,9 +87,5 @@ public class Cliente {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	
-
-	
 
 }
