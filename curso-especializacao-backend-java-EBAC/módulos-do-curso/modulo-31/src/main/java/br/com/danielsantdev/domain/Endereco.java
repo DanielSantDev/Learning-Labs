@@ -3,7 +3,7 @@ package main.java.br.com.danielsantdev.domain;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
-/@Embeddable
+@Embeddable
 public class Endereco {
 
 	@Column(name="rua")
