@@ -32,3 +32,9 @@ replay_pid*
 *.form
 curso-especializacao-backend-java-EBAC/ebac-entregas/.project
 curso-especializacao-backend-java-EBAC/ebac-entregas/.classpath
+curso-especializacao-backend-java-EBAC/módulos-do-curso/.idea/misc.xml
+curso-especializacao-backend-java-EBAC/módulos-do-curso/.idea/misc.xml
+curso-especializacao-backend-java-EBAC/módulos-do-curso/.idea/modules.xml
+curso-especializacao-backend-java-EBAC/módulos-do-curso/modulo-37/exemplo-gradle/app/build.gradle
+/curso-especializacao-backend-java-EBAC/módulos-do-curso/.idea
+*.xml
