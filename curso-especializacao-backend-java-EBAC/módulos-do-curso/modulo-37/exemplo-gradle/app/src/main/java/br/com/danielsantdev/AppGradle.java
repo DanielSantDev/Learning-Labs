@@ -3,12 +3,12 @@
  */
 package main.java.br.com.danielsantdev;
 
-public class App {
+public class AppGradle {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println(new AppGradle().getGreeting());
     }
 }

@@ -26,5 +26,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'br.com.danielsantdev.App'
+    mainClass = 'br.com.danielsantdev.App2'
 }
