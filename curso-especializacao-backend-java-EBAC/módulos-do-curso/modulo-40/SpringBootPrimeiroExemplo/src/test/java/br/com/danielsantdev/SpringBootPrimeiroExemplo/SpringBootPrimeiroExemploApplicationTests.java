@@ -1,4 +1,4 @@
-package br.com.rpires.SpringBootPrimeiroExemplo;
+package br.com.danielsantdev.SpringBootPrimeiroExemplo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

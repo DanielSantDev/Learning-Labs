@@ -1,7 +1,4 @@
-/**
- * 
- */
-package br.com.rpires.domain;
+package br.com.danielsantdev.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,10 +14,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/**
- * @author rodrigo.pires
- *
- */
 @Entity
 @Table(name = "TB_CLIENTE")
 @Getter
