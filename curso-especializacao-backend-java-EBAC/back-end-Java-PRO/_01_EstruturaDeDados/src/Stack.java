@@ -1,6 +1,6 @@
 // Desenvolvido por DanielSantDev
 // Uma pilha é uma estrutura de dados do tipo LIFO (Last In, First Out), onde o último elemento inserido é o primeiro a ser removido.
-// Operações comuns em pilhas incluem "push" (inserir no topo), "pop" (remover do topo) e "peek" (visualizar o topo).
+// Operações comuns em pilhas incluem "push" (inserir no topo), "pop" (remover do topo) e "top" (visualizar o topo).
 
 public class Stack<T> {
     private Node<T> top;
@@ -37,7 +37,7 @@ public class Stack<T> {
         return data;
     }
 
-    public T peek() {
+    public T top() {
         if (isEmpty()) {
             throw new RuntimeException("A pilha está vazia");
         }
@@ -59,11 +59,11 @@ public class Stack<T> {
         stack.push(20);
         stack.push(30);
 
-        System.out.println("Topo da pilha: " + stack.peek());
+        System.out.println("Topo da pilha: " + stack.top());
         System.out.println("Tamanho da pilha: " + stack.size());
 
         System.out.println("Elemento removido: " + stack.pop());
-        System.out.println("Novo topo da pilha: " + stack.peek());
+        System.out.println("Novo topo da pilha: " + stack.top());
         System.out.println("Pilha está vazia? " + stack.isEmpty());
     }
 }
