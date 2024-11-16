@@ -2,7 +2,7 @@ package main.java.br.com.danielsantdev.dao.generic.jdbc.dao;
 
 import java.util.List;
 
-import main.java.br.com.danielsantdev.domin.Cliente;
+import main.java.br.com.danielsantdev.domain.Cliente;
 
 public interface IClienteDAO {
 

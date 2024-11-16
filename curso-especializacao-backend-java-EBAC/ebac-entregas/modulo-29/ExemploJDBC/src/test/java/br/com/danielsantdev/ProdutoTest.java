@@ -6,12 +6,12 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
-import org.junit.Before;
+
 import org.junit.Test;
 
 import main.java.br.com.danielsantdev.dao.generic.jdbc.dao.IProdutoDAO;
 import main.java.br.com.danielsantdev.dao.generic.jdbc.dao.ProdutoDAO;
-import main.java.br.com.danielsantdev.domin.Produto;
+import main.java.br.com.danielsantdev.domain.Produto;
 
 public class ProdutoTest {
 

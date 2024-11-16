@@ -4,12 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
 import main.java.br.com.danielsantdev.dao.generic.jdbc.ConnectionFactory;
-import main.java.br.com.danielsantdev.domin.Cliente;
+import main.java.br.com.danielsantdev.domain.Cliente;
 
 public class ClienteDAO implements IClienteDAO {
 

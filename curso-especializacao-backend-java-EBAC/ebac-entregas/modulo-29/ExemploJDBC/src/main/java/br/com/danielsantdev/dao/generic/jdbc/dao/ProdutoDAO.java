@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.br.com.danielsantdev.domin.Produto;
+import main.java.br.com.danielsantdev.domain.Produto;
 import main.java.br.com.danielsantdev.dao.generic.jdbc.ConnectionFactory;
 
 public class ProdutoDAO implements IProdutoDAO{

@@ -1,6 +1,6 @@
 package main.java.br.com.danielsantdev.dao.generic.jdbc.dao;
 
-import main.java.br.com.danielsantdev.domin.Produto;
+import main.java.br.com.danielsantdev.domain.Produto;
 import java.util.List;
 
 public interface IProdutoDAO {

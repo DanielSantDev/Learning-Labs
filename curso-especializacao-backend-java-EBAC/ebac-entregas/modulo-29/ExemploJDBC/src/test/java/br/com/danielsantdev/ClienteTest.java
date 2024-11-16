@@ -7,12 +7,11 @@ import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import main.java.br.com.danielsantdev.dao.generic.jdbc.dao.ClienteDAO;
 import main.java.br.com.danielsantdev.dao.generic.jdbc.dao.IClienteDAO;
-import main.java.br.com.danielsantdev.domin.Cliente;
+import main.java.br.com.danielsantdev.domain.Cliente;
 
 public class ClienteTest {
 	
@@ -27,7 +26,7 @@ public class ClienteTest {
 		cliente.setNome("Daniel Santana");
 		Integer countCad = clienteDAO.cadastrar(cliente);
 		assertTrue(countCad == 1);
-		
+
 		Cliente clienteBD = clienteDAO.buscar("10");
 		assertNotNull(clienteBD);
 		assertEquals(cliente.getCodigo(), clienteBD.getCodigo());
